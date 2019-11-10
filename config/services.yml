@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        autowire: true
+
+    Symfony\Component\Console\Application:
+        public: true
+
+    GuzzleHttp\Client: ~
+
+    S3tezsky\DependencyAnalyzer\Command\AnalyzeCommand: ~
+
+    S3tezsky\DependencyAnalyzer\RequirementsVersionsAnalyzer: ~
+
+    S3tezsky\DependencyAnalyzer\PackageVersionsProvider: ~
+
+    S3tezsky\DependencyAnalyzer\ComposerJsonProvider: ~
